@@ -38,8 +38,30 @@ body {
 .logo-header {
     color: #2E2F42;  
 }
-/* list nav */
+/* list nav  flexbox*/
+ul {
+    padding: 0px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    background-color: aqua;
+}
 .list-nav {
+    display: flex;
+    margin-left: 76px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.list-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+.list-nav .link-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
@@ -54,16 +76,33 @@ body {
 
 /* list address */
 .list-address {
-    font-style: normal
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.list-address .item {
+    margin-left: auto;
+}
+.item:not(:last-child) {
+    margin-right: 40px;
 }
 .link-address {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+
     font-size: 16px;
     line-height: 1.5;
     color: #2E2F42;
+    font-style: normal;
 }
 .link-address:hover,
 .link-address:focus {
     color: #404BBF;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 /* section1 */
 .hidden {

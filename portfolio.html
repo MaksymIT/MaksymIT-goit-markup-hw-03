@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSTUDIO</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -12,23 +13,25 @@
 <body>
 <!--Page header-->
 <header>
-    <nav>
+    <div class="container">
+    <nav class="main-nav">
         <a class="logo link" href=""><span class="logo">WEB</span><span class="logo-header">STUDIO</span></a>
         <!---Navigation to other pages-->
         <ul class="list-nav list">
-            <li><a class="link-nav link" href="./index.html">Studio</a></li>
-            <li><a class="link-nav link" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="link-nav link" href="">Contacts</a></li>
+            <li class="item"><a class="link-nav link" href="./index.html">Studio</a></li>
+            <li class="item"><a class="link-nav link" href="./portfolio.html">Portfolio</a></li>
+            <li class="item"><a class="link-nav link" href="">Contacts</a></li>
         </ul>
-        </nav>
         <!---Address-->
         <address>
             <ul class="list-address list">
-                <li><a class="link-address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link-address link" href="tel:+110001111111">+11(000)111-11-11</a></li>
+                <li class="item"><a class="link-address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="link-address link" href="tel:+110001111111">+11(000)111-11-11</a></li>
             </ul>
          </address>
-        </header>
+    </nav>
+    </div>
+</header>
 <!---Section-->
 <section>
  <h1 class="hidden">Portfolio</h1>
