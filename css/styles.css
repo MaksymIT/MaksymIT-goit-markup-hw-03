@@ -10,12 +10,30 @@
 :root {
     --color-footer: #2E2F42;
 }
+
 /* body */
+/* Решта коду */
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
     color: #2E2F42;
     background: #FFFFFF
+}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%,
 }
 /* link */
 .link {
@@ -25,8 +43,10 @@ body {
 /* list */
 .list {
     list-style: none;
+    display: flex;
 }
-/* logo */
+
+/* logo portfolio and studio*/
 .logo {
     font-size: 18px;
     font-weight: 800;
@@ -38,15 +58,18 @@ body {
 .logo-header {
     color: #2E2F42;  
 }
-/* list nav  flexbox*/
-ul {
-    padding: 0px;
+
+/* list nav portfolio and studio*/
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
-    background-color: aqua;
+
+    border-bottom: 1px solid #E7E9FC;
 }
 .list-nav {
     display: flex;
@@ -68,20 +91,19 @@ ul {
     color: #2E2F42;
     list-style: none;
 }
-
 .link-nav:hover,
 .link-nav:focus {
     color: #404BBF;
 }
 
-/* list address */
+/* list address portfolio and studio */
 .list-address {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.list-address .item {
-    margin-left: auto;
+.list-address {
+    margin-left: 332px;
 }
 .item:not(:last-child) {
     margin-right: 40px;
@@ -100,62 +122,32 @@ ul {
 .link-address:focus {
     color: #404BBF;
 }
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-/* section1 */
-.hidden {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.0;
+
+/* section portfolio and studio */
+.container-section {
+    max-width: 1158px;
+    
+    padding: 0 15px;
+    
+    margin: 0 auto;
 }
 
-/* index.html */
-.section {
-    background: #2E2F42;
-}
-.caption-hero {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.0;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-.caption {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-/* section our team */
-.section-our-team {
-    background-color:#F4F4FD;
-}
-/* button index.html */
-.button-studio {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-    cursor: pointer;
-    border-style: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.button-studio:hover,
-.button-studio:focus {
-    background: #404BBF;
-}
-/* portfolio.html */
-
-/* list-filter-button */
+/* list-filter-button portfolio*/
 .list-filter-button {
-    color: #F4F4FD;
-  
+    display: flex;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center
+}
+.list-filter-button .item-button:not(:last-child) {
+    margin-right: 24px;
 }
 .filter-button {
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+
     color: #4D5AE5;
     cursor: pointer;
     border-style: none;
@@ -173,29 +165,191 @@ ul {
     color: #FFFFFF;
 }
 
+/* list portfolio */
+.list-portfolio {
+   display: flex;
+  
+   margin-left: -24px;
+   margin-top: -48px;
+   margin-right: -24px;
+   margin-bottom: -48px;
+}
+.list-portfolio > li {
+    flex-basis: calc((100% - 48px, -24px, -48px, -24px) / 3);
+    margin-left: 24px;
+    margin-top: 48px;
+    margin-right: 24px;
+    margin-bottom: 48px;  
+}
+.card {
+    border: 1px solid #E7E9FC;
+}
 /* slogan-portfolio */
-.slogan-portfolio-studio {
+.slogan-portfolio {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: 16px;
+}
+/* text-portfolio */
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-top: 8px;
+    margin-left: 16px;
+}
+.cards-content {
+   padding: 32px 0px;
+}
+/* hidden portfolio and studio */
+.hidden {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.0;
+    text-align: center;
+
+    width: 332px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* index.html studio */
+.slogan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    margin: 120px 24px 8px 0px;
+}
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin: 0px 24px 120px 0px;
+}
+.studio {
+    margin-right: 0px;
+}
+/* section1 */
+.section {
+    background: #2E2F42;
+    height: 600px;
+    text-align: center;
+}
+.caption-hero {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.0;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+/* button studio*/
+.button-studio {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 16px 32px;
+}
+.button-studio:hover,
+.button-studio:focus {
+    background: #404BBF;
+}
+
+/* section 2 */
+.list-studio {
+    display: flex;
+}
+.item-studio {
+    flex-basis: 264px;
+}
+
+/* section 3 */
+.caption {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+
+    text-align: center;
+}
+.img-item {
+    margin: 72px 24px 120px 0px;
+}
+
+/* section 4 */
+.section-our-team {
+    background-color:#F4F4FD;
+}
+.cards {
+   background-color: #FFFFFF;
+}
+.img:not(last-child) {
+    margin-right: 24px;
+}
+.card-html {
+    margin: 0px; 
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
-.text-portfolio-studio {
+.card-studio {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
 }
-/* footer */
+.card-content {
+    text-align: center;
+    padding: 32px 16px 32px 16px;
+}
+/* footer portfolio and studio */
 .footer {
     background-color: #2E2F42;
     font-size: 18px;
     line-height: 1.1;
+    height: 310px;
+    padding-top: 120px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 156px;
+    padding-right: 156px;
 }
+.container-footer {
+    padding: 100px 1020px 100px 156px;
+}
+
+/* footer-logo*/
+.footer-logo {
+    color: #F4F4FD;
+}
+
+ /* text footer */
 .text-footer {
     font-size: 16px;
     line-height: 1.5;
     color: #E7E9FC;
 }
-/* footer-logo */
-.footer-logo {
-    color: #F4F4FD;
- }
