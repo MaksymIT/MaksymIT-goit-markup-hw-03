@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Page header-->
-    <header>
+    <header class="header">
        <div class="container">
         <nav class="main-nav">
             <a class="logo link" href=""><span class="logo">WEB</span><span class="logo-header">STUDIO</span></a>
@@ -22,6 +22,7 @@
                 <li class="item"><a class="link-nav link" href="./portfolio.html">Portfolio</a></li>
                 <li class="item"><a class="link-nav link" href="">Contacts</a></li>
             </ul>
+        </nav>
     <!---Address-->
         <address>
             <ul class="list-address list">
@@ -29,70 +30,75 @@
                 <li class="item"><a class="link-address link" href="tel:+110001111111">+11(000)111-11-11</a></li>
             </ul>
         </address>
-            </nav>
        </div>
     </header>
     <!---Unique page content-->
      <main>
-        <div class="container-section">
     <!--Section 1-->
         <section class="section">
+    <div class="container-studio"> 
                 <h1 class="caption-hero">Effective Solutions<br>
                     for Your Business</h1>
                 <button type="button" class="button-studio">Order Service</button>
         </section>
+    </div>
     <!---Section 2-->
-        <section>
+        <section class="section-hiden">
+           <div class="container-studio">
             <h2 class="hidden">Specifics of work</h2>
             <ul class="list list-studio">
-                <li class="item-stidio">
+                <li class="item-studio">
                     <h3 class="slogan">Strategy</h3>
                     <p class="text">Our goal is to identify the business
                         problem to walk away with the perfect and creative solution.</p>
                 </li>
-                <li class="item-stidio">
+                <li class="item-studio">
                     <h3 class="slogan">Punctuality</h3>
                     <p class="text">Bring the key message to the brand's audience for the best price within the
                         shortest possible time.</p>
                 </li>
-                <li class="item-stidio">
+                <li class="item-studio">
                     <h3 class="slogan">Diligence</h3>
                     <p class="text">Research and confirm brands that present the strongest digital growth
                         opportunities and minimize risk.</p>
                 </li>
-                <li class="item-stidio">
-                    <h3 class="slogan studio">Technologies</h3>
-                    <p class="text studio">Design practice focused on digital experiences. We bring forth a deep
+                <li class="item-studio">
+                    <h3 class="slogan">Technologies</h3>
+                    <p class="text">Design practice focused on digital experiences. We bring forth a deep
                         passion for problem-solving.</p>
                 </li>
             </ul>
+           </div>
         </section>
      <!--Section 3-->
         <section>
-            <h2 class="caption">What are we doing</h2>
-            <ul class="list">
-                <li class="img-item">
-                    <img src="./images/studio711.jpg" alt="computer" width="360">
-                </li>
-                <li class="img-item">
-                    <img src="./images/studio712.jpg" alt="computer" width="360">
-                </li>
-                <li class="img-item">
-                    <img src="./images/studio713.jpg" alt="computer" width="360">
-                </li>
-            </ul>
+         <div class="container-studio">
+                <h2 class="caption">What are we doing</h2>
+                <ul class="list list-img">
+                    <li class="img-item">
+                        <img src="./images/studio711.jpg" alt="computer" width="360">
+                    </li>
+                    <li class="img-item">
+                        <img src="./images/studio712.jpg" alt="computer" width="360">
+                    </li>
+                    <li class="img-item">
+                        <img src="./images/studio713.jpg" alt="computer" width="360">
+                    </li>
+                </ul>
+         </div>
         </section>
      <!---Section 4-->
         <section class="section-our-team">
-            <h2 class="caption">Our Team</h2>
-                    <ul class="list">
+                <div class="center">
+                    <h2 class="caption">Our Team</h2>
+                    <ul class="list list-our-team">
                         <li class="img">
                             <div class="cards">
-                               <div class="card-thumb"><img src="./images/studio1.jpg" alt="wait please" width="264"></div>
-                            <div class="card-content">
-                                <h3 class="card-html">Mark Guerrero</h3>
-                                <p class="card-studio">Designer</p>
-                            </div>
+                                <div class="card-thumb"><img src="./images/studio1.jpg" alt="wait please" width="264"></div>
+                                <div class="card-content">
+                                    <h3 class="card-html">Mark Guerrero</h3>
+                                    <p class="card-studio">Designer</p>
+                                </div>
                             </div>
                         </li>
                         <li class="img">
@@ -123,10 +129,11 @@
                             </div>
                         </li>
                     </ul>
+                </div>
         </section>
      </main>
     <footer class="footer">
-        <div class="container-footer">
+        <div class="container-studio">
             <a class="logo link" href="">WEB<span class="footer-logo">STUDIO</span></a>
             <p class="text-footer">
                 Increase the flow of customers and<br>
@@ -135,6 +142,5 @@
             </p>
         </div>
     </footer>
-    </div>
 </body>
 </html>
